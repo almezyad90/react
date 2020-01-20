@@ -18,4 +18,17 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );*/
+//------------------------------------------
+const myName = "mohammad";
 
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+console.log(currentDate);
+
+ReactDOM.render(
+  <div>
+    <p>created by {myName}</p>
+    <p>copy right {year}</p>
+  </div>,
+  document.getElementById("root")
+);
