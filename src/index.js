@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-const img = "https://picsum.photos/200";
 
 /*const age = 25;
 
@@ -32,8 +31,9 @@ ReactDOM.render(
     <p>copy right {year}</p>
   </div>,
   document.getElementById("root")
-);*/
+);
 //-----------------------------
+const img = "https://picsum.photos/200";
 ReactDOM.render(
   <div>
     <h1 className="style">My Favourite Foods</h1>
@@ -61,3 +61,41 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
+//------------------------------------
+
+const costumStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+costumStyle.color = "blue";
+ReactDOM.render(
+  <h1 style={costumStyle}>hello there</h1>,
+  document.getElementById("root")
+);
+//----------------------------
+const date = new Date();
+const correnttime = date.getHours();
+
+let greating;
+const customStyle = {
+  color: ""
+};
+
+if (correnttime < 12) {
+  greating = "Good morning";
+  customStyle.color = "red";
+} else if (correnttime < 18) {
+  greating = "good Afternoon";
+  customStyle.color = "blue";
+} else {
+  greating = "good night";
+  customStyle.color = "green";
+}
+
+ReactDOM.render(
+  <h1 className="chalinge" style={customStyle}>
+    {greating}
+  </h1>,
+  document.getElementById("root")
+);*/
