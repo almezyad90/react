@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import App from "../components/App";
 /*const age = 25;
 
 ReactDOM.render(
@@ -99,3 +99,11 @@ ReactDOM.render(
   </h1>,
   document.getElementById("root")
 );*/
+//-------------------------
+
+ReactDOM.render(
+  <div>
+    <App />
+  </div>,
+  document.getElementById("root")
+);
